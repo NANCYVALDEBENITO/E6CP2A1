@@ -1,8 +1,21 @@
 # Dado el array:
 # 1. Mostrar en pantalla el primer elemento.
-# 2. Mostrar en pantalla el último elemento.
+# 2. Mostrar en pantalla el ultimo elemento.
 # 3. Mostrar en pantalla todos los elementos.
-# 4. Mostrar en pantalla todos los elementos junto con un índice.
-# 5. Mostrar en pantalla todos los elementos que se encuentren en una posición par.
+# 4. Mostrar en pantalla todos los elementos junto con un indice.
+# 5. Mostrar en pantalla todos los elementos que se encuentren en una posicion par
 
 arreglo = [1,2,3,9,1,4,5,2,3,6,6]
+puts arreglo[0]
+puts arreglo[arreglo.length-1]
+puts arreglo
+for n in 0..(arreglo.length-1)
+	puts "#{arreglo[n]} #{n}"
+end
+for n in 0..(arreglo.length-1)
+	if (arreglo[n] % 2).zero?
+		puts "#{arreglo[n]} #{n}"
+	else
+		puts "#{arreglo[n]} #{n} es impar"
+	end
+end

@@ -1,3 +1,4 @@
+
 # Dado el array:
 # 1. Mostrar en pantalla el primer elemento.
 # 2. Mostrar en pantalla el ultimo elemento.
@@ -7,15 +8,19 @@
 
 arreglo = [1,2,3,9,1,4,5,2,3,6,6]
 puts arreglo[0]
+
 puts arreglo[arreglo.length-1]
+
 puts arreglo
+
 for n in 0..(arreglo.length-1)
-	puts "#{arreglo[n]} #{n}"
+	puts "valor #{arreglo[n]} indice #{n}"
 end
+
 for n in 0..(arreglo.length-1)
-	if (arreglo[n] % 2).zero?
-		puts "#{arreglo[n]} #{n}"
+	if (n % 2).zero?
+		puts "valor #{arreglo[n]} indice = #{n} es par"
 	else
-		puts "#{arreglo[n]} #{n} es impar"
+		puts "el indice = #{n} es impar"
 	end
 end

@@ -4,16 +4,14 @@
 # o string dado esta contenido en aste.
 
 cadena = 'Hola Mundo!'
-caracter = 'o'
+caracter = 'i'
 
-def exist(string,parameter)
-	if string.include? parameter
-		puts true
-	else 
-		puts false
-	end
+def exist(string, parameter)
+  if string.include? parameter
+    puts true
+  else
+    puts false
+  end
 end
 
-exist(cadena,caracter)
-
-
+exist(cadena, caracter)
